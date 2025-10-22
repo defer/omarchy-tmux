@@ -242,7 +242,7 @@ generate_theme_configs() {
     IFS='|' read -r base variant <<<"$config"
 
     cat >"$tmux_file" <<EOF
-set -g @plugin 'joaofelipegalvao/omarchy-tmux'
+set -g @plugin 'defer/omarchy-tmux#use-hooks-testing'
 set -g @theme '$base'
 EOF
 
